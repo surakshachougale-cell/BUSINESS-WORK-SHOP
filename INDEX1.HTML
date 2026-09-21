@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeafWear | Sustainable Fashion</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Arial,sans-serif;color:#243b2a;background:#f5f8f2}
+    header{background:#174d2b;color:white;padding:18px 8%;display:flex;
+           justify-content:space-between;align-items:center}
+    nav a{color:white;text-decoration:none;margin-left:20px}
+    .hero{padding:80px 8%;text-align:center;background:#dfeedd}
+    .hero h1{font-size:48px;margin-bottom:15px}
+    .hero p{font-size:18px;margin-bottom:25px}
+    .btn{background:#236b3b;color:white;padding:12px 25px;
+         text-decoration:none;border-radius:6px}
+    .products{padding:50px 8%;text-align:center}
+    .products h2{margin-bottom:30px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;padding:25px;border-radius:10px;
+          box-shadow:0 3px 12px #0001}
+    .card .leaf{font-size:55px}
+    .card h3{margin:15px 0 8px}
+    footer{background:#174d2b;color:white;text-align:center;padding:25px}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}.hero h1{font-size:36px}
+      header{flex-direction:column;gap:12px}}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>🍃 LeafWear</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Wear Nature. Wear LeafWear.</h1>
+  <p>Eco-friendly clothing made for a greener future.</p>
+  <a class="btn" href="#products">Shop Collection</a>
+</section>
+
+<section class="products" id="products">
+  <h2>Our Collection</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="leaf">🌿</div>
+      <h3>Organic T-Shirt</h3>
+      <p>Soft, comfortable and sustainable.</p>
+      <br><b>₹799</b>
+    </div>
+
+    <div class="card">
+      <div class="leaf">🍃</div>
+      <h3>Eco Hoodie</h3>
+      <p>Warm style with planet-friendly materials.</p>
+      <br><b>₹1,499</b>
+    </div>
+
+    <div class="card">
+      <div class="leaf">🌱</div>
+      <h3>Leaf Dress</h3>
+      <p>Elegant everyday sustainable fashion.</p>
+      <br><b>₹1,299</b>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>📧 hello@leafwear.com | 📞 +91 98765 43210</p>
+  <p>© 2026 LeafWear. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
